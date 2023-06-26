@@ -171,6 +171,11 @@
 			width: 100%;
 		}
 
+		.disabled {
+			pointer-events: none;
+			opacity: 0.5;
+		}
+
 		.options-wrapper {
 			display: grid;
 			row-gap: 6.7vmin;
@@ -243,21 +248,21 @@
 					</button>
 				</div>
 			</li>
-			<li>
+			<li class="disabled">
 				<div class="option">
 					<button onClick='selectConfigurationButton.performClick("u3PkOj");'>
 						<span>Japan 日本</span>
 					</button>
 				</div>
 			</li>
-			<li>
+			<li class="disabled">
 				<div class="option">
 					<button onClick='selectConfigurationButton.performClick("u3PbOt");'>
 						<span>Malaysia 马来西亚</span>
 					</button>
 				</div>
 			</li>
-			<li>
+			<li class="disabled">
 				<div class="option">
 					<button onClick='selectConfigurationButton.performClick("u7PkOt");'>
 						<span>Singarpore 新加坡</span>
