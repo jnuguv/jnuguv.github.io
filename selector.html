@@ -184,6 +184,12 @@
 		.options-wrapper>li {
 			background-color: #fff;
 			color: var(--navy-blue);
+			padding: 1em;
+		}
+
+		.options-wrapper>li.enabled {
+			background-color: #fff;
+			color: var(--navy-blue);
 			background-image: url(https://shop.thecompanystore.com.sg/media/wysiwyg/app/arrow.png);
 			background-position-x: 97%;
 			background-position-y: center;
@@ -196,7 +202,7 @@
 		}
 
 		.option span {
-			display: block;
+			display: inline-block;
 			color: var(--navy-blue);
 			line-height: 1em;
 			font-size: 4.5vmin;
@@ -212,6 +218,8 @@
 			background: transparent;
 			border: 0;
 			padding: 0;
+			display: flex;
+			justify-content: space-between;
 		}
 
 		.option button:active {
@@ -234,14 +242,35 @@
 		</div>
 		<h2>Shop with us in...</h2>
 		<ul class="options-wrapper">
-			<li>
+			<li class="enabled">
 				<div class="option default">
 					<button onClick='selectConfigurationButton.performClick("uINo9p");'>
 						<span>Australia</span>
 					</button>
 				</div>
 			</li>
-			<li>
+			<li class="disabled">
+				<div class="option">
+					<button onClick='selectConfigurationButton.performClick("u3PkOj");'>
+						<span>Japan 日本</span><span>Coming Soon</span>
+					</button>
+				</div>
+			</li>
+			<li class="disabled">
+				<div class="option">
+					<button onClick='selectConfigurationButton.performClick("u3PbOt");'>
+						<span>Malaysia</span><span>Coming Soon</span>
+					</button>
+				</div>
+			</li>
+			<li class="disabled">
+				<div class="option">
+					<button onClick='selectConfigurationButton.performClick("u7PkOt");'>
+						<span>Singarpore</span><span>Coming Soon</span>
+					</button>
+				</div>
+			</li>
+			<li class="enabled">
 				<div class="option">
 					<button onClick='selectConfigurationButton.performClick("u3PkOt");'>
 						<span>Thailand ประเทศไทย</span>
@@ -250,22 +279,8 @@
 			</li>
 			<li class="disabled">
 				<div class="option">
-					<button onClick='selectConfigurationButton.performClick("u3PkOj");'>
-						<span>Japan 日本</span>
-					</button>
-				</div>
-			</li>
-			<li class="disabled">
-				<div class="option">
-					<button onClick='selectConfigurationButton.performClick("u3PbOt");'>
-						<span>Malaysia 马来西亚</span>
-					</button>
-				</div>
-			</li>
-			<li class="disabled">
-				<div class="option">
-					<button onClick='selectConfigurationButton.performClick("u7PkOt");'>
-						<span>Singarpore 新加坡</span>
+					<button onClick='selectConfigurationButton.performClick("u7PkOst");'>
+						<span>Vietnam Việt Nam</span><span>Coming Soon</span>
 					</button>
 				</div>
 			</li>
